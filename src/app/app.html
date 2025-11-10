@@ -1,0 +1,10 @@
+<h3>Angular Security Examples</h3>
+<mat-toolbar color="primary">
+  <nav>
+    <button mat-button *ngFor="let item of menu" [routerLink]="item.path">{{ item.label }}</button>
+  </nav>
+</mat-toolbar>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
